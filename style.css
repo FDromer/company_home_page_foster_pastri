@@ -1,0 +1,999 @@
+/* root: colors variable */
+:root {
+  --background-color: #fff;
+  --second-background-color: #f8f5f0;
+  --icon-logo-color: #404040;
+  --main-color: #e5e4e2;
+  --hover-color: #eb600f;
+  --text-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Header full specification */
+#header {
+  display: block;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;  
+}
+
+.navbar-one {
+  display: block;
+  height: 75px;
+}
+
+.nv-one-left {
+  float: left;
+}
+
+.pastd {
+  display: flex;
+  line-height: 20px;
+  padding-top: 15px;
+}
+
+#space {
+  margin-left: 187px;
+}
+
+.pastdk {
+  padding-left: 25px;
+}
+
+.nv-one-right {
+  float: right;
+}
+
+.icondesk {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.fa-solid {
+  margin-right: 15px;
+  padding-left: 15px;
+}
+ 
+.navbar-two {
+  display: flex;
+  width: 100%;
+  padding: 0px 14%;
+}
+
+.navbar-two ul li {
+  position: relative;
+  float: left;
+}
+
+.navbar-two ul li a {
+  padding: 20px;
+  display: block;
+}
+
+.navbar-two ul li ul {
+  position: absolute;
+  width: 200px;
+}
+
+.navbar-two ul li ul li {
+  width: 100% ;
+}
+
+.imgdeskpas {
+  width: 115px;
+  height: 110px;
+}
+
+#header img {
+  position: fixed;
+  top: 14px;
+  left: 40px;
+  z-index: 999;
+}
+
+label {
+  float: left;
+}
+
+.navbar-two ul li:focus-within > ul,
+.navbar-two ul li:hover > ul {
+  display: initial;
+}
+
+/* Header hidden or display none elements */
+#menu,
+label,
+.pastm,
+.iconmob,
+.checkbtn,
+.sub-products,
+.sub-training,
+.navbar-two ul li ul {
+  display: none;
+}
+
+/* Header typography */
+.pastdk,
+.fostdk {
+  Font-Family: 'Abril Fatface', Cursive;
+}
+
+.fostdk {
+  font-size: 40px;
+}
+
+.pastdk {
+  font-size: 30px;
+}
+
+.fa-solid {
+  font-size: 22px;
+}
+
+.navbar-two ul li a {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+label {
+  font-size: 25px;
+}
+
+/* Header color */
+#header {
+  background-color: var(--background-color);
+}
+
+.fostdk {
+  color: var(--hover-color);
+}
+
+.pastdk {
+  color: var(--icon-logo-color);
+}
+
+.icondesk a {
+  color: var(--icon-logo-color);
+}
+
+.navbar-two {
+  background-color: var(--main-color);
+}
+
+.navbar-two ul li a {
+  color: var(--text-color);
+}
+
+.navbar-two ul li ul {
+  background-color: var(--main-color);
+}
+
+.navbar-two ul li ul li {
+  border-top: 1px solid var(--background-color);
+}
+
+label {
+  color: var(--text-color);
+}
+
+/* Header hover effect color */
+.navbar-two ul li a:hover {
+  color: var(--hover-color);
+}
+
+.icondesk a:hover {
+  color: var(--hover-color); 
+}
+
+/* Header responsive */
+@media only screen and (max-width: 920px) {
+   ul,
+  .pastd,
+  .imgdeskpas,
+  .icondesk {
+    display: none;
+  }
+
+  #header {
+    position: fixed;
+    background-color: var(--background-color);
+  }
+
+  .navbar-one {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+  }  
+
+  .iconmob {
+    display: flex;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
+  .fa-solid {
+    font-size: x-large;
+    margin-right: 20px;
+    padding-left: 15px;
+  }
+
+  .iconmob a {
+    color: var(--icon-logo-color);
+  }
+
+  .iconmob a:hover {
+    color: var(--hover-color);
+  }
+
+  .pastm {
+    display: flex;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-left: 40px;
+  }
+
+  .fostmo {
+    font-size: 40px;
+    color: var(--hover-color);
+  }
+
+  .pastmo {
+    font-size: 30px;
+    padding-left: 25px;
+  }
+
+  .fostmo,
+  .pastmo {
+    font-family: 'Abril Fatface', Cursive;
+  }
+  
+  label {
+    display: initial;
+    margin-left: 15px;
+  }
+
+  .navbar-two {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--main-color);
+  }
+
+  .navbar-two ul li {
+    width: 100%;
+  }
+
+  .navbar-two ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar-two ul li ul li:last-child {
+    border-bottom: 1px solid var(--background-color); 
+  }
+
+  #menu:checked ~ ul {
+    display: initial;
+  }
+}
+
+/* First section main content full specification */
+.mission {
+  background-image: url('images/foster-pastry-mainimg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  width: auto;
+  margin: 35px 35px;
+  display: flex;
+}
+
+.fimgtexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  margin-left: 90px;
+}
+
+.fimgtexto .textone {
+  margin-left: -100px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.fimgtexto .textow {
+  width: 100%;
+}
+
+/* First section typography */
+.fimgtexto .textone {
+  Font-Family: 'Abril Fatface', Cursive;
+  font-size: 70px;
+}
+
+.fimgtexto .textow {
+  Font-Family: 'Abril Fatface', Cursive;
+  font-size: 35px;
+}
+
+/* First section color */
+.fimgtexto .textow,
+.fimgtexto .textone {
+  color: var(--main-color);
+}
+
+/* responsive first section main content */
+@media only screen and (max-width: 920px) {
+  .mission {
+    background-image: url('images/foster-pastry-mainimg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .fimgtexto .textow {
+    margin-left: -90px;
+  }
+}
+
+/* Second section main content full specification */
+.trainsect {
+  margin: 35px 35px;
+}
+
+.trainsect-text {
+  display: block;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+
+.trainsect-text p {
+  padding-top: 18px;
+}
+
+.trainsect-text h2,
+.trainsect-text p {
+  text-align: center;
+}
+
+.trainobject {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-height: 630px;
+}
+
+.itemra,
+.itemrb,
+.itemrc {
+  width: 400px;
+  min-height: 500px;
+  position: relative;
+  bottom: 100px;
+}
+
+.itemra {
+  background-image: url('images/foster-pastry-virtual.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.itemrb {
+  background-image: url('images/foster-pastry-lab.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.itemrc {
+  background-image: url('images/foster-pastry-location.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trainelem {
+  margin: 10px;
+}
+
+.traincont {
+  position: relative;
+  bottom: -440px;
+  left: 40px;
+  max-width: 310px;
+  min-height: 210px;
+}
+
+.hstyle {
+  text-align: center;
+  padding: 15px 15px;
+}
+
+.traincont p {
+  padding: 0px 15px 24px 24px;
+}
+
+.btnone,
+.btntwo {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.btnone {
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.btntwo {
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/* Second section main content typography */
+.trainsect-text h2 {
+  font-weight: 500;
+  font-size: 36px;
+  font-family: 'PT Serif', serif;
+}
+
+.trainsect-text p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.hstyle {
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: 'Abril Fatface', Cursive;
+}
+
+.traincont p {
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 30px;
+}
+
+.btnone {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+.btntwo {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+/* Second secttion main content color */
+.trainsect-text h2 {
+  color: var(--text-color);
+}
+
+.trainobject {
+  background-color: var(--second-background-color);
+}
+
+.traincont {
+  background-color: #e5e4e2;
+}
+
+.btnone {
+  background-color: var(--hover-color);
+  color: var(--background-color);
+}
+
+.btntwo {
+  color: var(--text-color);
+  border: 1px solid var(--hover-color);
+}
+
+/* Second section main content hover effect color */
+.btnone:hover {
+  background-color: var(--background-color);
+  color: var(--hover-color);
+  border: 1px solid var(--hover-color);
+}
+
+.btntwo:hover {
+  background-color: var(--background-color);
+  color: var(--hover-color);
+  border: 1px solid var(--text-color);
+}
+
+/* Second section main content responsive */
+@media only screen and (max-width: 920px) {
+  .trainelem {
+    margin-bottom: 170px;
+  }
+  
+  .itemra,
+  .itemrb,
+  .itemrc
+   {
+    width: 325px;
+  }
+  
+  .traincont {
+    left: 20px;
+    width: 285px;
+    height: 220px;
+  }
+
+  .btnone {
+    padding: 10px 15px;
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  
+  .btntwo {
+    padding: 10px 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+}
+
+/* Third section main content full specification */
+.productsect-text {
+  display: block;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.productsect-text p {
+  padding-top: 18px;
+}
+
+.productsect-text h2,
+.productsect-text p {
+  text-align: center;
+}
+
+img {
+  max-width: 325px;
+  height: 250px;
+}
+
+.product-elem {
+  display: flex;
+  position: relative;
+  margin: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.product-elem::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.itemp {
+  margin: 20px;
+  scroll-snap-align: start;
+}
+
+.titlep {
+  height: 50px;
+  width: 325px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 24px;
+  transition: 300ms ease-in-out;
+  opacity: 0.7;
+}
+
+.titleh {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.titled {
+  text-align: center;
+  padding: 10px 15px;
+  visibility: hidden;
+}
+
+/* Third section main content typography */
+.productsect-text h2 {
+  font-weight: 500;
+  font-size: 36px;
+  font-family: 'PT Serif', serif;
+} 
+
+.productsect-text p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.titleh {
+  Font-Family: 'Abril Fatface', Cursive;
+  font-size: 30px;
+}
+
+.titled {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+}
+
+.titles {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Third section main content color */
+.productsect-text h2 {
+  color: var(--text-color);
+}
+
+.titlep {
+  background-color: var(--hover-color);
+}
+
+.itemp:hover .titlep {
+  background-color: var(--hover-color);
+}
+
+/* Third section main content hover effect */
+.itemp:hover {
+  cursor: pointer;
+}
+
+.itemp:hover .titlep {
+  height: 125px;
+  bottom: 17px;
+}
+
+.itemp:hover .titled {
+  visibility: visible;
+}
+
+.itemp:hover .titlep,
+.itemp:hover img {
+  transform: scale(1.1);
+}
+
+/* Fouth section main content full specification */
+.teamsect {
+  margin: 35px 35px;
+}
+
+.teamsect-text {
+  max-width: 90%;
+  height: auto;
+}
+
+.teamsect-text {
+  display: block;
+  max-width: 1600px;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.teamsect-text p {
+  padding-top: 18px;
+}
+
+.teamsect-text h2,
+.teamsect-text p {
+  text-align: center;
+}
+
+.imgchef {
+  min-height: 300px;
+  width: 210px;
+}
+
+.team-background {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('images/teamimg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  width: 100%;
+}
+
+.teamchef {
+  display: block;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.teamp {
+  min-height: 140px;
+  max-width: 210px;
+  position: absolute;
+  transition: 300ms ease-in-out;
+  opacity: 0.7;
+}
+
+.teamp p {
+  visibility: hidden;
+}
+
+.teamp:hover {
+  cursor: pointer;
+}
+
+.teamp:hover p {
+  visibility: visible;
+}
+
+.teamp h3 {
+  text-align: center;
+}
+
+.teamp p {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+/* Fouth section main content typography */
+.teamsect-text h2 {
+  font-weight: 500;
+  font-size: 36px;
+  font-family: 'PT Serif', serif;
+}
+
+.teamsect-text p {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.teamp h3 {
+  font-size: 30px;
+  font-weight: bold;
+  Font-Family: 'Abril Fatface', Cursive;
+}
+
+.teamp p {
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* Fouth section main content color */
+.teamsect-text h2 {
+  color: var(--text-color);
+}
+
+.teamp:hover {
+  background-color: var(--hover-color);
+}
+
+.teamp h3 {
+  color: var(--background-color);
+}
+
+/* Fouth section main content responsive */
+@media only screen and (max-width: 920px) {
+  .team-background {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .teamchef {
+    display: block;
+    flex-direction: row;
+    margin-bottom: 145px;
+  }
+
+  .teamp {
+    display: block;
+    position: absolute;
+  }
+
+}
+
+/* Footer full specification */
+footer {
+  padding-top: 50px;
+}
+
+.fpast-content {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.fpast-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 85px;
+}
+
+.fpast-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.fpast-col h2 {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.fpast-col h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.fpast-col ul {
+  list-style: none;
+}
+
+.fpast-col ul li:not(:last-child) {
+  padding-bottom: 12px;
+}
+
+.fpast-col ul li {
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.fpast-col ul li:hover {
+  padding-left: 8px;
+}
+
+.fpast-col .fpast-link a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  padding: 12px 0px 0px 14px;
+  margin-left: 10px;
+  border-radius: 50%;
+  line-height: 40%;
+  transition: all 0.5 ease;
+}
+
+.fpast-copy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fpast-copyr {
+  display: inline-flex;
+}
+
+.fpast-copyr a {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.fpast-copyr a:hover {
+  text-decoration: underline;
+}
+
+/* Footer typography */
+.fpast-col h2 {
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'PT Serif', serif;
+}
+
+.fpast-col ul li {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.fpast-copyr a,
+.fpast-copy p {
+  font-size: 14px;
+}
+
+/* Footer color */
+footer {
+  background-color: var(--main-color);
+}
+
+.fpast-col h2::before {
+  background-color: var(--hover-color);
+}
+
+.fpast-col ul li {
+  color: var(--text-color);
+}
+
+.fpast-col ul li:hover {
+  color: var(--hover-color);
+}
+
+.fpast-col .fpast-link a {
+  background-color: var(--icon-logo-color);
+  color: var(--main-color);
+}
+
+.fpast-col .fpast-link a:hover {
+  color: var(--hover-color);
+  background-color: var(--background-color);
+}
+
+.fpast-copy {
+  border-top: 1px solid var(--icon-logo-color);
+}
+
+.fpast-copyr a,
+.fpast-copy p {
+  color: var(--icon-logo-color);
+}
+
+.fpast-copyr a:not(:last-child) {
+  border-right: 1px solid var(--icon-logo-color);
+}
+
+/* Footer responsive */
+@media only screen and (max-width: 920px) {
+  .fpast-col ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .fpast-copy {
+    display: block;
+    flex-direction: column;
+  }
+
+  .fpast-copy p {
+    padding-bottom: 20px;
+    margin-left: 18px;
+  }
+
+  .fpast-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .fpast-col {
+    width: 190%;
+    margin-bottom: 30px;
+  }
+}
