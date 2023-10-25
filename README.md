@@ -1,5 +1,5 @@
 ## Advanced HTML, CSS & Responsivenes: FOSTER PASTRY 
 
-&rarr; from [codecademy]()
+&rarr; from [codecademy](https://www.codecademy.com/)
 
-&rarr; []()
+&rarr; [FOSTER PASTRY](https://fdromer.github.io/company_home_page_foster_pastri/)
